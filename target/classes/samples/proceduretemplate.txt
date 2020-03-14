@@ -1,0 +1,20 @@
+create procedure [${schema}].${table}_mysql_to_data_warehouse_procedure
+as
+BEGIN
+  if exists(select 1 from [${schema}].$table target join ${tempSchema}.$table source on target.$primaryKey = source.$primaryKey)
+    UPDATE [${schema}].$table
+    SET
+    #foreach($column in $columns)
+        $column = source.$column,
+        #end
+        alter_timestamp = source.alter_timestamp
+    from ${tempSchema}.$table as source
+    where [${schema}].$table.$primaryKey = source.$primaryKey;
+  else
+    insert into [${schema}].$table
+    select *
+    from ${tempSchema}.$table as source;
+
+  delete from ${tempSchema}.$table;
+END;
+go;

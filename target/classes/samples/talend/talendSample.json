@@ -1,0 +1,133 @@
+{
+  "@RecordUUID":"09b67ebc-a107-476f-8e07-12b051edcf38", // Is it come back in the output?
+  "SourceSystem":{
+    "@Code":"undtwnundefmund",
+    "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+    "AffiliateCode":"TW",
+    "MarketCode":"TWN",
+    "DivisionCode":"01",
+    "BrandCode":"10",
+    "ConsumerId":"0002514069"
+  },
+  "PersonalData":{
+    "LocalFullName":"許彩云",
+    "BirthDay":"29",
+    "BirthMonth":"03",
+    "BirthYear":"1956",
+    "RegDate":"2012-09-07T08:00:00+08:00",
+    "RegTouchPointCode":"00001221",
+    "RegPersonnelCode":"08101408",
+    "ConsumerCountryCode_ISO3":"TWN",
+    "GenderCode":"fml", // Only mle and fml?
+    "CurrencyCode":"TWD",
+    "AgeRange":{
+      "AgeFrom":"63",
+      "AgeTo":"63" //use case? guess?
+    },
+    "AnniversaryDate":"2008-05-16T08:00:00+08:00",
+    "EmailReceiptFlag":"false"
+  },
+  "ContactInformation":{
+    "EMediaList":{
+      "EMedia":[
+        {
+          "@TypeCode":"emlprs",  //We need every type,description and restrictions/specifics for each
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "Address":"tty1568@hotmail.com",
+          "ValidityCode":"a", // What this fields represents
+          "Primary":"true"
+        },
+        {
+          "@TypeCode":"emlprs",
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "Address":"tty1568@hotmail.com",
+          "ValidityCode":"a",
+          "Primary":"true"
+        },
+        {
+          "@TypeCode":"emlprs",
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "Address":"tty1568@hotmail.com",
+          "ValidityCode":"a",
+          "Primary":"true"
+        }
+      ]
+    },
+    "PhoneList":{
+      "Phone":[
+        {
+          "@TypeCode":"lndprf", // We need every type,description and restrictions/specifics for each
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "ValidityCode":"a",
+          "Primary":"false"
+        },
+        {
+          "@TypeCode":"lndprs",
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "PhoneNumber":"062595388",
+          "ValidityCode":"a", // what is this?
+          "Primary":"true"
+        },
+        {
+          "@TypeCode":"mblprs",
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "ValidityCode":"a",
+          "Primary":"false"
+        }
+      ]
+    },
+    "AddressList":{
+      "Address":[
+        {
+          "@TypeCode":"prs",  // We need every type,description and restrictions/specifics for each
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "Address1":"台南市中區武聖路１５１巷５０弄２２號",
+          "CityDescription_local":"中區",
+          "ProvinceDescription_local":"中區",
+          "CountryCode_ISO3":"TWN",
+          "PostalCode":"700",
+          "Primary":"true"
+        },
+        {
+          "@TypeCode":"prs",
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "Address1":"台南市中區武聖路１５１巷５０弄２２號",
+          "CityDescription_local":"中區",
+          "ProvinceDescription_local":"中區", // State?
+          "CountryCode_ISO3":"TWN",
+          "PostalCode":"700",
+          "Primary":"true" // Multiple primary? Test/bad data?
+        },
+        {
+          "@TypeCode":"prs",
+          "SourceTimestamp":"2012-09-07T08:00:00+08:00",
+          "Address1":"台南市中區武聖路１５１巷５０弄２２號",
+          "CityDescription_local":"中區",
+          "ProvinceDescription_local":"中區",
+          "CountryCode_ISO3":"TWN",
+          "PostalCode":"700",
+          "Primary":"true"
+        }
+      ]
+    }
+  },
+  "ProgramList":{
+    "Program":{
+      "ApplicationTouchPointCode":"00001221",
+      "ProgramTypeCode":"twn01sgnclb",
+      "ProgramTypeDescription":"Taiwan / Estēe Lauder — Signature Club",
+      "ProgramLevelCode":"twn01dmnclb",
+      "ProgramLevelDescription":"Taiwan / Estēe Lauder — Diamond club",
+      "MembershipNum":"000067525",
+      "StartTimestamp":"2018-06-15T08:00:00+08:00",
+      "EndTimestamp":"2019-06-14T08:00:00+08:00",
+      "PointsAcquired":"190600",
+      "PointsRedeemed":"158000"
+    }
+  },
+  "Header":{
+    "@Action":"CREATE",
+    "DocumentTimestamp":"2019-04-01T09:25:30+08:00",
+    "DocumentUUID":"07774360-4b08-43a5-8913-efd19838ed77"
+  }
+}

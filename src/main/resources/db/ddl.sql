@@ -1,0 +1,6 @@
+DROP SCHEMA IF EXISTS `estee-na-local`;
+CREATE SCHEMA IF NOT EXISTS `estee-na-local`
+  DEFAULT CHARACTER SET utf8;
+USE `estee-na-local`;
+
+SET SQL_MODE = 'ALLOW_INVALID_DATES';

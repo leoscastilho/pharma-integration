@@ -1,0 +1,6 @@
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/estee-na-local?useSSL=false&autoReconnect=true&serverTimezone=UTC&useUnicode=true&character_set_server=utf8mb4
+    username: root
+    password: root

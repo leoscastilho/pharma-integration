@@ -1,0 +1,58 @@
+spring:
+  jpa:
+    profiles: default
+    show-sql: false
+    hibernate:
+      dialect:
+        storage_engine: innodb
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: elcna
+        dialect: org.hibernate.dialect.MySQL57Dialect
+
+  datasource:
+    url: jdbc:mysql://kis-elc-na-qa.mysql.database.azure.com/elc-na-dev?useSSL=false&autoReconnect=true&serverTimezone=UTC&useUnicode=true&character_set_server=utf8mb4
+    username: kissql-admin@kis-elc-na-qa
+    password: kisAbcd1234
+    driver-class-name: com.mysql.jdbc.Driver
+    tomcat:
+      max-active: 100
+      max-wait: 10000
+      min-idle: 10
+      test-on-borrow: true
+      time-between-eviction-runs-millis: 300000
+      max-idle: 10
+      validation-query: select 1
+      validation-interval: 30000
+      test-while-idle: true
+
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t] txn[%X{transactionID}] msg[%X{messageID}] %C{1} [%M] - %m%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t] txn[%X{transactionID}] msg[%X{messageID}] %C{1} [%M] - %m%n"
+  level:
+    ROOT: WARN
+    org.springframework: INFO
+    com.estee.na: DEBUG
+    com.estee.na.kafka: DEBUG
+#    org.hibernate:
+#      SQL: DEBUG
+#      type: TRACE
+
+
+blobStorage:
+  accountName: elcnadevstorage
+  accountKey: g8BAuornIo7NQZENP/tqFJMYG6RXrjrRYU+RUa4BLxFVal/+i6kOtWjcwCZk5oA1TFBo54xXKyvYR9C2X7ZSBg==
+#
+#spring.jpa.hibernate.connection.verifyServerCertificate=false
+#spring.jpa.hibernate.connection.requireSSL=true
+
+melissa:
+  active: true
+#  customer-id: RsApLx2tFp2C_WjY9IPDz4**
+  customer-id: LrrvuNBFJg4vsc2RviQ_lS**nSAcwXpxhQ0PC2lXxuDAZ-**
+  phone-url: http://globalphone.melissadata.net/V4/WEB/GlobalPhone/doGlobalPhone
+  default-country: US
+  address-url: https://address.melissadata.net/v3/WEB/GlobalAddress/doGlobalAddress
