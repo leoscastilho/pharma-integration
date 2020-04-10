@@ -1,6 +1,27 @@
 spring:
+  jpa:
+    profiles: default
+    show-sql: false
+    hibernate:
+      dialect:
+        storage_engine: innodb
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: datamart
+        dialect: org.hibernate.dialect.MySQL57Dialect
   profiles: local
   datasource:
-    url: jdbc:mysql://localhost:3306/estee-na-local?useSSL=false&autoReconnect=true&serverTimezone=UTC&useUnicode=true&character_set_server=utf8mb4
+    url: jdbc:mysql://localhost:3306/datamart?verifyServerCertificate=false&useSSL=false&requireSSL=false&autoReconnect=true&serverTimezone=UTC&useUnicode=true&character_set_server=utf8mb4
     username: root
-    password: root
+    password: Azh4##zr3
+    tomcat:
+      max-active: 100
+      max-wait: 10000
+      min-idle: 10
+      test-on-borrow: true
+      time-between-eviction-runs-millis: 300000
+      max-idle: 10
+      validation-query: select 1
+      validation-interval: 30000
+      test-while-idle: true

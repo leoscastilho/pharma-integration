@@ -8,12 +8,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL57Dialect
+    database-platform: MySQL5Dialect
 
   datasource:
     url: jdbc:mysql://kis-elc-na-dev.mysql.database.azure.com/estee-na-dev?useSSL=false&autoReconnect=true&serverTimezone=UTC&useUnicode=true&character_set_server=utf8mb4
     username: kissql-admin@kis-elc-na-dev
     password: kisAbcd1234
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     tomcat:
       max-active: 100
       max-wait: 10000
