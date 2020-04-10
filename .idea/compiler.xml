@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maven-archiver" />
-        <module name="estee-na-ingest" />
+        <module name="pharma-integration" />
       </profile>
     </annotationProcessing>
   </component>
