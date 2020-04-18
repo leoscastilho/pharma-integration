@@ -25,6 +25,37 @@ spring:
       validation-query: select 1
       validation-interval: 30000
       test-while-idle: true
+
+sanitization:
+  whitelist-domains: ["gmail.com","yahoo.com","hotmail.com","qq.com","aol.com","comcast.net","msn.com","icloud.com","163.com","sbcglobal.net","soasta.com",
+                      "outlook.com","aim.com","live.com","live.ca","po.esteeonline.com","prodigy.net","estee.com","mail.com","walla.com","inbox.com","verizon.net","att.net","estee.com",
+                      "prodigy.net","wi.rr.com","estee.com","worldnet.att.net","austin.rr.com","12star.net","nyc.rr.com","tx.rr.com","satx.rr.com","cinci.rr.com","kent.edu","kc.rr.com","woh.rr.com",
+                      "neo.rr.com","us.army.mil","socal.rr.com","ca.rr.com","estee.ca","erols.com","gci.net","flash.net","gsi.net","hvc.rr.com","windowslive.com","gwu.edu","knights.ucf.edu","us.ibm.com",
+                      "mail.mcgill.ca","indy.rr.com","mail.utexas.edu","oh.rr.com","elc.estee.com","u.washington.edu","docomo.ne.jp","wavecable.com","husky.neu.edu","i.softbank.jp","email.unc.edu","hotmail.co.nz",
+                      "bak.rr.com","airmail.net","mun.ca","nb.sympatico.ca","csu.fullerton.edu","gt.rr.com","fmr.com","neb.rr.com","nl.rogers.com","outlook.es","jps.net","hot.rr.com","email.sc.edu","nf.sympatico.ca",
+                      "navy.mil","talk21.com","stx.rr.com","student.gsu.edu","elp.rr.com","dishmail.net","mailexcite.com","zips.uakron.edu","sncglobal.net","email.wm.edu","unlv.nevada.edu","twmi.rr.com","bellnet.ca",
+                      "topper.wku.edu","vols.utk.edu","live.ie","mavs.uta.edu","gwmail.gwu.edu","its.jnj.com","us.pwc.com","si.rr.com","mypacks.net","myself.com","mail.chapman.edu","u.rochester.edu","mi.rr.com","pdq.net",
+                      "rams.colostate.edu","mail.mil","g.cofc.edu","miners.utep.edu","wnco.com","vhc-nb.us","stjohns.edu","g.uky.edu","my.uwstout.edu","bama.ua.edu","u.boisestate.edu","cougars.csusm.edu","aexp.com","student.american.edu",
+                      "rgv.rr.com","teleport.com","utmb.edu","tesco.net","students.ecu.edu","mtmail.mtsu.edu","loop.colum.edu","jacks.sdstate.edu","sw.rr.com","pride.hofstra.edu","tm.net.my","softbank.ne.jp","g.austincc.edu","pld.com",
+                      "hotmail.com.tw","tomfordbeauty.com","mail.ccsf.edu","bham.rr.com","dons.usfca.edu","tir.com","bop.gov","gis.net","g.emporia.edu","salud.unm.edu","ntu.edu.tw","usit.net","mail.adelphi.edu","ma.rr.com","student.umass.edu",
+                      "lvcm.com","ut.utm.edu","sopris.net","bgnet.bgsu.edu","classicnet.net","pei.sympatico.ca","us.af.mil","neo.tamu.edu","luckymail.com","student.fdu.edu","covad.net","usps.gov","moreheadstate.edu","thegrid.net","cingular.com",
+                      "nj.rr.com","hotmail.gr","arkansas.net","umit.maine.edu","uabmc.edu","rci.rogers.com","megalink.net","cchmc.org","us.loreal.com","live.jp","btconnect.com","suscom-maine.net","mail.bw.edu","k12tn.net","aggies.ncat.edu","yaxianee.com",
+                      "ne.rr.com","cms.k12.nc.us","zju.edu.cn","newwavecomm.net","spartans.ut.edu","pipeline.com","wamu.net","email.campbell.edu","livemail.tw","unity.ncsu.edu","accesswave.ca","g.rwu.edu","iopener.net","integrity.com","mc.duke.edu","wans.net",
+                      "email.byu.edu","law.gwu.edu","live.com.pt","huskies.bloomu.edu","g.holycross.edu","lion.lmu.edu","mail.ecu.edu","tiger.brenau.edu","mail.naz.edu","eagles.ewu.edu","suddenlinkmail.com","mail.montclair.edu","gzhbeauty.com","tinyworld.co.uk",
+                      "live.longwood.edu","mail.harvard.edu","alumni.lsu.edu","cmail.carleton.ca","notes.udayton.edu","eyou.com","k12.wv.us","hsc.utah.edu","quest.net","ole.augie.edu","live.kutztown.edu","hitchcock.org","coyote.csusb.edu","hewitt.com","nevada.unr.edu",
+                      "student.rcc.edu","my.apsu.edu","wolves.northern.edu","its.nicholls.edu","am.jll.com","byu.net","csfb.com","yahoo.com","myumanitoba.ca","midwest.net","usmc.mil","ualberta.net","mail.lipscomb.edu","alumni.ecu.edu","glasgow-ky.com","global.t-bird.edu",
+                      "emirates.net.ae","tcdsb.org","po.cwru.edu","go.ccad.edu","go.tarleton.edu","student.smc.edu","dupage.edu","cub.uca.edu","gmatc.matc.edu","cpp.edu","bobcats.gcsu.edu","med.va.gov","alumni.baylor.edu","bravemail.uncp.edu","usace.army.mil","my.bridgeport.edu",
+                      "btes.tv","faa.gov","hotmail.co.kr","us.nestle.com","navix.net","net.elmhurst.edu","oneonta.edu","worldpath.net","student.ysu.edu","cheetahmail.com","bcm.tmc.edu","state.nm.us","cableaz.com","pc.jaring.my","agmail.com","sycamores.indstate.edu","fastwebnet.it",
+                      "na.ko.com","lightspeed.net","unh.newhaven.edu","infionline.net","mymhc.ca","live.esu.edu","visto.com","mail.pima.edu","g.coastal.edu","mocs.utc.edu","alumni.upenn.edu","noos.fr","worldnet.att.com","catamount.wcu.edu","garnet.acns.fsu.edu","brighthouse.com","childrens.harvard.edu",
+                      "wxs.nl","qnet.com","coair.com","mail.lcc.edu","pacbell.com","telefonica.net","ca.ibm.com","estee-lauder.co.uk","banet.net","libertysurf.fr","eagles.nccu.edu","mail.sdsu.edu","theedge.ca","cobbk12.org","yonglecorp.com","morrisbb.net","cwjamaica.com","friars.providence.edu","mail.uri.edu",
+                      "lc.cuny.edu","student.shu.edu","caa.columbia.edu","med.navy.mil","eagles.usi.edu","dla.mil","cableinet.co.uk","myhunter.cuny.edu","student.ucr.edu","indy.net","mkcorp.com","student.fairfield.edu","us.mcd.com","dfas.mil","email.uky.edu","med.ge.com","kellerisd.net",
+                      "alum.rpi.edu","swipnet.se","mail.niagara.edu","rams.wssu.edu","k12.nd.us","wispertel.net","mesanetworks.net","uabc.edu.mx","mail.roanoke.edu","g.rit.edu","hotmail.sg","zebra.net","aircanopy.net","panhandle.rr.com","ybb.ne.jp","my.madonna.edu","trbvm.com",
+                      "mbox2.singnet.com.sg","lumc.edu","shopping.instagram.com","email.davenport.edu","attws.com","unch.unc.edu","dial.pipex.com","fmc-na.com","sbcglobla.net","mcn.net","fda.hhs.gov","m.marywood.edu","hartcom.net","prexar.com","setel.com","coxinet.net",
+                      "students.niu.edu","colpal.com","sjamail.net","uwmail.com","student.yosemite.edu","mail.umw.edu","ukgateway.net","bison.howard.edu","harborside.com","dentonisd.org","mybizrate.com","my.scccd.edu","fidmail.com","cc.umanitoba.ca","sbchlobal.net",
+                      "students.clark.edu","pd.jaring.my","ra.msstate.edu","osler.us","homemail.com","midway.uchicago.edu","mtvstaff.com","nwytg.net","hol.gr","amail.com","wildcats.jwu.edu","grnco.net","scj.com","csi.com","my.dom.edu","hotmail.my","eagle.clarion.edu",
+                      "hoail.com","ic.sunysb.edu","c.ringling.edu","poets.whittier.edu","upcmail.nl","mbox3.singnet.com.sg","myuw.net","viterbo.edu","nv.ccsd.net","isd.net","pio.carrollu.edu","essex1.com","scglobal.net","moment.net","my.whitworth.edu","outlook.net",
+                      "citiz.net","mail.auburn.edu","kiehls-usa.com","nshs.edu","coyotes.usd.edu","spartans.nsu.edu","am.sony.com","hbs.edu"]
+
 #
 #spring.jpa.hibernate.connection.verifyServerCertificate=false
 #spring.jpa.hibernate.connection.requireSSL=true
